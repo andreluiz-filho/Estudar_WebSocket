@@ -1,0 +1,8 @@
+pip install gevent-websocket
+pip install eventlet
+pip install uvicorn[standard]
+
+gunicorn --thread 50 app:app
+
+
+uvicorn app:app --reload
